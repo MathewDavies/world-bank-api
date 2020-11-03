@@ -1,0 +1,138 @@
+/*Russo - font-family: 'Russo One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* Atala  font-family: 'Alata', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/* Do Hyeon font-family: 'Do Hyeon', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/*Overpass font-family: 'Overpass', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&display=swap');
+html{
+    box-sizing: border-box;
+    }
+body{
+    margin:0;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    font-size: 3rem;
+    padding: 15px;
+    opacity: 0.8;
+}
+h3{
+    font-size: 1.6rem;
+    color: rgb(67, 67, 163);
+}
+.half-section-flex-container{
+    display: flex;
+    flex-direction: row;
+    
+    max-width: 1000px;
+    margin: auto;
+}
+#select-title{
+    display: inline;
+}
+.section, .half-section{
+    border: 1px solid black;
+    box-shadow: 0px 5px 30px 5px rgb(0, 0, 0, 0.4);
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(230, 237, 240);
+}
+.half-section{
+    width:80vw;
+}
+.section{
+    width: 80vw;
+    max-width: 1000px;
+}
+
+.option-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.description{
+    font-size: 1.1rem;
+    padding: 8px;
+}
+.information-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    }
+    .info-item{
+        font-size: 1.4rem;
+        margin-left: 30px;
+        font-weight: 600;
+        color: rgb(56, 148, 59);
+    }
+.info-answer{
+        font-weight: 400;
+        color: black;
+}
+#link:hover{
+    color: rgb(67, 67, 163);
+}
+
+button{
+    
+    width: 140px;
+    height: 40px;
+    background-color: rgb(67, 67, 163);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    outline: none;
+    font-size:1.3rem;
+    font-family: 'Overpass', sans-serif;
+}
+select{
+    font-family: 'Overpass', sans-serif;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+button:hover{
+    filter: brightness(110%);
+    border: 1px white solid;
+}
+#myMap{
+    position:relative;
+    width:900px;height:600px;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px){
+    .half-section-flex-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .info-item{
+        font-size: 1.2rem;
+        }
+    .information-grid{
+        grid-template-columns: 1fr;
+    }
+    #select-title{
+        font-size: 1.3rem;
+    }
+    h1{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 380px){
+    select, button{
+        display: block;
+        margin: 20px auto;
+    }
+}

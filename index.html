@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54a7f48eef.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>World Bank API</title>
+</head>
+<body>
+    <h1>World Bank API</h1>
+
+    <div id="container">
+    <div class="half-section-flex-container">
+    <div class="half-section">
+        <div class="option-flex">
+            <h3 id="select-title">South American Countries</h3>
+            <div class="controls">
+            <select name="country" id="country">
+                <option value="arg" selected>Argentina</option>
+                <option value="bra">Brazil</option>
+                <option value="bol">Bolivia</option>
+                <option value="chl">Chile</option>
+                <option value="col">Columbia</option>
+                <option value="ecu">Ecuador</option>
+                <option value="guy">Guyana</option>
+                <option value="pry">Paraguay</option>
+                <option value="per">Peru</option>
+                <option value="sur">Suriname</option>
+                <option value="ury">Uruguay</option>
+                <option value="ven">Venezuala</option>
+            </select>
+            <button id="button">Get Results</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="half-section">
+        <p class="description">Select a country to display information on income level, population growth and location. </p>
+        <p class="description">All data comes from the World Bank API</p>
+
+    </div>
+</div>
+
+    <div class="section">
+        <p><h3 id="country-title"></h3> <p>
+         <div class="information-grid">   
+            <p class= "info-item">Income Level: <span class = "info-answer" id="income-level"></span> </p>
+            <p class= "info-item">Capital City: <span class = "info-answer" id="capital-city"></span> </p>
+            <p class= "info-item">Longditude: <span class = "info-answer" id="longitude"></span> </p>
+            <p class= "info-item">Latitude: <span class = "info-answer" id="latitude"></span> </p>
+            <p class= "info-item">View on Map: <span ><a class = "info-answer" id="link" href=""></a></span> </p>
+            <p class= "info-item">Latest Population: <span class = "info-answer" id="latest-population"></span> </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Population Growth</h3>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    
+</div> 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+<!-- <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AtKdVIxvOfq2ImDhxsauk3VsuSfybGCHVQ1yTO_GJiPvAjoER2PLB4TLFN4zViW6' async defer></script>    -->
+<script src="script.js"></script>
+</body>
+</html>
